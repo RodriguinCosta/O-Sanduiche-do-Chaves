@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca do Sanduíche perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+           <img src="img/Pátio1.png" alt="">
+            <p>Um dia desses, dentro de seu barril na vila, chaves viu que perdeu seu sanduíche de presunto, ajude chaves a encontrar quem pegou seu sanduíche!</p>
+            <button class="btn-proximo" data-proximo="1">Casa do Seu Madruga</button>
+            <button class="btn-proximo" data-proximo="2">Pátio 2</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você entrou na casa do seu madruga.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar o sanduíche no quarto da chiquinha</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para o pátio</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/Pátio2.png" alt="">
+            <p>No pátio 2, onde você possa ver a fonte, e as casas, onde você pretende procurar?</p>
+            <button class="btn-proximo" data-proximo="5">Olhar perto da Fonte</button>
+            <button class="btn-proximo" data-proximo="6">Procurar nas casas próximas</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você entrou no quarto da chiquinha, e aqui não se encontra o sanduíche.</p>
+            <button class="btn-proximo" data-proximo="7">Voltar para o Pátio</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/Pátio1.png" alt="">
+            <p>Você decidiu desistir de procurar o sanduíche e voltou para o pátio.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Olhando perto da fonte, você vê fareros do sanduíche, então alguém pegou o sanduíche do chaves!</p>
+            <button class="btn-proximo" data-proximo="7">Procurar quem pegou o sanduíche.</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Procurando nas casas do segundo pátio, você não encontra nada de sanduíche.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar para o pátio</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Existe Nhonho e Chiquinha suspeitos de ter pego o sanduíche, descubra quem foi.</p>
+            <button class="btn-proximo" data-proximo="9">Investigar o Nhonho</button>
+            <button class="btn-proximo" data-proximo="10">Investigar a Chiquinha</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta ao pátio, você está quase perto de encontrar o sanduíche de Chaves</p>
+            <button class="btn-proximo" data-proximo="7">Procurar com Nhonho e Chiquinha.</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/ChavesEnhonho.jpg" alt="">
+            <p>Nhonho diz que não foi ele que roubou o sanduiche, mesmo com essa pança gigante!</p>
+            <button class="btn-proximo" data-proximo="12">Investigar se foi o quico que roubou.</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/chavochiquinha.webp" alt="">
+            <p>Chiquinha diz que não foi ela que pegou o sanduíche de chaves, mesmo sendo sempre espertinha.</p>
+            <button class="btn-proximo" data-proximo="12">Procurar Quico e ver se ele pegou.</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/ChavesSanduiche.jpg" alt="">
+            <p>Chaves agora finalmente consegue comer seu sanduíche de presunto que estava com Quico.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="img/QuicoSanduiche.webp" alt="">
+            <p>Chaves encontra Quico com seu sanduíche e agora Chaves pode comer em paz.</p>
+            <button class="btn-proximo" data-proximo="11">Comer o sanduíche.</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
